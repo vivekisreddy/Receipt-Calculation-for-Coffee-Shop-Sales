@@ -1,0 +1,37 @@
+Homework 2 Pseudocode 
+
+In the main() function 
+Initialize all the variables needed for the program to run 
+Make two char variables; one for the input file and one for the output file and set them to [50] and not [100] to avoid disruptions 
+Make an int variable for the user item 
+Make two pointers FILE * ; one for opening the input file and one for opening the output file 
+Ask for the user to choose between the three program; 1, 2, 3 respectively 
+Add an if statement to check if the user picked only programs 1, 2, or 3. If not then print an "Invalid Statement" 
+Ask for the user to enter an input file they desire 
+Open the input file the user asks for 
+Use a switch statement for the 3 main programs 
+Case 1 will go through the function overall_revenue, 
+Case 2 will go through the function balance,
+Case 3 will go through the tally function 
+Additionally for case 3 (tally function) ask the user what item they want to analyze 
+Ask the user what output file they want their item to be stored in 
+Ask the user if they want to append the input or over-write 
+If user types 'A' or 'a' which means they clicked append then it will put in the output file 
+Next open the output file 
+Include an if statement to check if the file asked by the user is NULL and then print NULL <- This is not crucial for the program to run 
+Print the item and the tally function in the output file 
+Make a separate source file for the three functions 
+
+Functions
+For the first function; overall_revenue use a while loop and fscanf to check if the itemcode and price of the item is after the 0 column 
+Add the price to the revenue variable 
+Return the revenue variable 
+For the balance function, do the same while loop used for overall_revenue and then add the price to the balance variable 
+Return the variable 
+For the lst function tally, do the same while loop used for overall_revenue
+Declare a variable counter which will be used for getting the tally 
+Check if the if the itemCode equals to the item inputted by the user
+Increment the counter variable to the number of times a particular item was sold
+Return the counter variable which will be the number of times the item was sold 
+For the program to use all the functions to run, include a header.h file which will have the function prototypes of overall_revenue, balance, and tally
+Finally have a makefile which will be used to compile all the files in the program and make sure there isn't any warnings or errors 
